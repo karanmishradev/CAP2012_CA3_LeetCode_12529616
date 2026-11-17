@@ -1,0 +1,11 @@
+// LeetCode 509: Fibonacci Number
+// Approach: Recursion (aligned with Unit IV topic: Recursion)
+// Time Complexity: O(2^n), Space Complexity: O(n) recursion stack
+
+class Solution {
+public:
+    int fib(int n) {
+        if (n <= 1) return n;
+        return fib(n - 1) + fib(n - 2);
+    }
+};
